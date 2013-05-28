@@ -74,7 +74,7 @@ $more = 0;
 <!-- ABOUT BOX -->
 <div class="box">
 <h6>About Jonathan Zittrain</h6><br>
-<img src="http://futureoftheinternet.org/wp-content/uploads/2008/03/jz.jpg" alt="jonathan zittrain" width="100"/><br><br>
+<img src=" <?php echo wp_get_attachment_url( 9 ); ?> " alt="jonathan zittrain" width="100"/><br><br>
 <p class="small"><?php bloginfo('description'); ?></p>
 </div>
 

@@ -35,10 +35,10 @@
 <!-- header Box
      <div id="header-box">
        <div id="header-box-right">
-          <img src="http://futureoftheinternet.org/wp-content/uploads/2008/03/cover.jpg" id="box-book" alt="cover" width="48px" height="70px">
+          <img src="<?php echo wp_get_attachment_url( 10 ); ?>" id="box-book" alt="cover" width="48px" height="70px">
        </div>
        <div id="header-box-left">
-       <a href="http://futureoftheinternet.org/download"> <h2 class="box">READ</h2></a>
+       <a href="<?php echo get_site_url(); ?>/download"> <h2 class="box">READ</h2></a>
        <br />
        <a href="http://www.amazon.com/gp/product/0300124872?ie=UTF8&tag=jonatzittr-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0300124872">
 <h2 class="box">BUY</h2></a>
@@ -51,7 +51,7 @@
 <!-- Site Name -->
 	<!-- <h1><a href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"  class="logo"><?php bloginfo('name'); ?></a> </h1> -->
 <!-- Site Logo -->
-        <a href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"  class="logo"><img src="http://futureoftheinternet.org/wp-content/uploads/2008/03/bluelogo.png" id="headerlogo"></a>
+        <a href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"  class="logo"><img src=" <?php echo wp_get_attachment_url( 19 ); ?> " id="headerlogo"></a>
 
 
 
@@ -64,7 +64,7 @@
 <?php wp_list_pages('sort_column=menu_order&depth=1&title_li='); ?>
 <!--<?php wp_list_categories('orderby=name&title_li=<a>Departments</a>'); ?>-->
 
-<li class="alignright"><a href="<?php bloginfo('rss2_url'); ?>">RSS <img src="http://futureoftheinternet.org/wp-content/uploads/2008/07/feed-icon-14x14.png"/></a></li>
+<li class="alignright"><a href="<?php bloginfo('rss2_url'); ?>">RSS <img src=" <?php echo wp_get_attachment_url( 36 ); ?> "/></a></li>
 </ul>
 </div>
 </div>
